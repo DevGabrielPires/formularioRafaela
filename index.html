@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
     <title>Cadastro DEV</title>
 </head>
 
@@ -12,34 +13,35 @@
     <div>
         <h1 id="titulo">Cadastro de DEV'S</h1>
         <p id="subtitulo">Complete com suas informações</p>
+        <br>
     </div>
 
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Nome</label>
+                <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
             <div class="campo">
-                <label for="sobrenome">Sobrenome</label>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
         <div class="campo">
-            <label for="email">E-mail</label>
+            <label for="email"><strong>E-mail</strong></label>
             <input type="email" name="email" id="email" required>
         </div>
 
         <div class="campo">
-            <label>De qual lado da aplicação você desenvolve?</label>
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
             <label><input type="radio" name="devweb" value="frontend" checked>Front-end</label>
             <label><input type="radio" name="devweb" value="frontend">Back-end</label>
             <label><input type="radio" name="devweb" value="frontend">FullStac</label>
         </div>
 
         <div class="campo">
-            <label>Seu nivel de senioridade?</label>
+            <label for="senioridade"><strong>Seu nivel de senioridade?</strong></label>
             <Select id="senioridade">
                 <option selected disabled value="">Escolha uma opção</option>
                 <option>Junior</option>
@@ -49,8 +51,8 @@
         </div>
 
         <fieldset class="grupo">
-            <div class="campo">
-                <label>Selecione as tecnologias que você utiliza</label>
+            <div id="check">
+                <label><Strong>Selecione as tecnologias que você utiliza</Strong></label><br><br>
                 <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
                 <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
@@ -66,14 +68,14 @@
                 <input type="checkbox" name="tecnologia7" id="tecnologia7" value="Java">
                 <label for="tecnologia7">Java</label>
             </div>
-        </fieldset>
+        </fieldset><br>
 
         <div class="campo">
-            <label>Conte para nós um pouco da sua experiência:</label>
+            <label><strong>Conte para nós um pouco da sua experiência:</strong></label>
             <textarea name="xp" id="xp" cols=60 rows="7"></textarea>
         </div>
 
-        <button class="" type="submit">Concluido</button>
+        <button class="button" type="submit">Concluido</button>
 
     </form>
 </body>
